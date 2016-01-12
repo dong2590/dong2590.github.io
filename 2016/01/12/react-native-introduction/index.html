@@ -4,12 +4,17 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>first page | Web自留地</title>
+    <title>react-native-introduction | Web自留地</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="Kenn Tung">
     
-    <meta name="description" content="H1 第一篇测试文章">
+    <meta name="description" content="React Native如此之火爆,不耍下不是好前端:)
+快速开始搭建iOS开发环境
+安装我的node环境是通过nvm安装,node版本v4.1.2
+安装watchman,facebook提供的文件监视器,便于文件编译
+1brew install watchman
+安装React Native CL">
     
     
     
@@ -65,15 +70,15 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/01/09/first-page/" title="first page" itemprop="url">first page</a>
+      <a href="/2016/01/12/react-native-introduction/" title="react-native-introduction" itemprop="url">react-native-introduction</a>
   </h1>
   <p class="article-author">By
     
       <a href="https://dong2590.github.io" title="Kenn Tung">Kenn Tung</a>
     </p>
   <p class="article-time">
-    <time datetime="2016-01-09T00:22:00.000Z" itemprop="datePublished">2016-01-09</time>
-    更新日期:<time datetime="2016-01-09T00:22:00.000Z" itemprop="dateModified">2016-01-09</time>
+    <time datetime="2016-01-12T15:23:52.000Z" itemprop="datePublished">2016-01-12</time>
+    更新日期:<time datetime="2016-01-12T15:23:52.000Z" itemprop="dateModified">2016-01-12</time>
     
   </p>
 </header>
@@ -82,10 +87,32 @@
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#u5FEB_u901F_u5F00_u59CB"><span class="toc-number">1.</span> <span class="toc-text">快速开始</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#u5B89_u88C5"><span class="toc-number">1.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u521B_u5EFADemo"><span class="toc-number">1.2.</span> <span class="toc-text">创建Demo</span></a></li></ol></li></ol>
 		</div>
 		
-		<p>H1 第一篇测试文章</p>
+		<p>React Native如此之火爆,不耍下不是好前端:)</p>
+<h2 id="u5FEB_u901F_u5F00_u59CB"><a href="#u5FEB_u901F_u5F00_u59CB" class="headerlink" title="快速开始"></a>快速开始</h2><p>搭建iOS开发环境</p>
+<h3 id="u5B89_u88C5"><a href="#u5B89_u88C5" class="headerlink" title="安装"></a>安装</h3><p>我的node环境是通过nvm安装,node版本v4.1.2</p>
+<p>安装watchman,facebook提供的文件监视器,便于文件编译</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install watchman</span><br></pre></td></tr></table></figure>
+<p>安装React Native CLI工具,可能需要sudo权限</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g react-native-cli</span><br></pre></td></tr></table></figure>
+<p>安装没有出错,继续,出错请google之.</p>
+<h3 id="u521B_u5EFADemo"><a href="#u521B_u5EFADemo" class="headerlink" title="创建Demo"></a>创建Demo</h3><p>可能需要sudo</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">react-native init Demo</span><br></pre></td></tr></table></figure>
+<p>执行命令后,需要稍等一会,因为需要联网下载,成功后会有如下信息展示<br><code>Installing react-native package from npm...</code></p>
+<p><code>Setting up new React Native app in /Users/dongjinfeng/djf/workspace/react_native_demo/Demo</code></p>
+<p><code>To run your app on iOS:</code></p>
+<p><code>Open /Users/dongjinfeng/djf/workspace/react_native_demo/Demo/ios/Demo.xcodeproj in Xcode</code></p>
+<p><code>Hit the Run button</code></p>
+<p><code>To run your app on Android:</code></p>
+<p><code>Have an Android emulator running (quickest way to get started), or a device connected
+   cd /Users/dongjinfeng/djf/workspace/react_native_demo/Demo</code></p>
+<p><code>react-native run-android</code></p>
+<p>按上面提示iOS用XCode打开就可以了,Android则需要使用模拟器</p>
+<p>打开”Demo.xcodeproj”时,可能会提示你没有权限,检查下”/Users/your path/.babel.json”该文件是否可读写</p>
+<p>加上权限<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod <span class="number">777</span> /Users/your path/.babel.json</span><br></pre></td></tr></table></figure></p>
+<p>编译时会新开个终端窗口,通过后会启动模拟器<br><img src="http://7xpxha.com1.z0.glb.clouddn.com/iOSSimulatorStart.png?imageView2/2/w/400/q/75" alt="启动成功"></p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -95,7 +122,7 @@
 
 <div class="article-share" id="share">
 
-  <div data-url="https://dong2590.github.io/2016/01/09/first-page/" data-title="first page | Web自留地" data-tsina="null" class="share clearfix">
+  <div data-url="https://dong2590.github.io/2016/01/12/react-native-introduction/" data-title="react-native-introduction | Web自留地" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -104,19 +131,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2016/01/12/react-native-introduction/" title="react-native-introduction">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  react-native-introduction</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2016/01/09/hello-world/"  title="Hello World">
+<a href="/2016/01/09/first-page/"  title="first page">
  <strong>NEXT:</strong><br/> 
- <span>Hello World
+ <span>first page
 </span>
 </a>
 </div>
@@ -129,7 +148,7 @@
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#u5FEB_u901F_u5F00_u59CB"><span class="toc-number">1.</span> <span class="toc-text">快速开始</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#u5B89_u88C5"><span class="toc-number">1.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u521B_u5EFADemo"><span class="toc-number">1.2.</span> <span class="toc-text">创建Demo</span></a></li></ol></li></ol>
   </div>
 
 <div id="asidepart">
