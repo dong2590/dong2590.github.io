@@ -13,8 +13,8 @@
 快速开始搭建iOS开发环境
 安装我的node环境是通过nvm安装,node版本v4.1.2
 安装watchman,facebook提供的文件监视器,便于文件编译
-1brew install watchman
-安装React Native CL">
+1$ brew install watchman
+安装React Native ">
     
     
     
@@ -78,7 +78,7 @@
     </p>
   <p class="article-time">
     <time datetime="2016-01-12T15:23:52.000Z" itemprop="datePublished">2016-01-12</time>
-    更新日期:<time datetime="2016-01-12T15:23:52.000Z" itemprop="dateModified">2016-01-12</time>
+    更新日期:<time datetime="2016-01-12T15:31:26.000Z" itemprop="dateModified">2016-01-12</time>
     
   </p>
 </header>
@@ -94,20 +94,20 @@
 <h2 id="u5FEB_u901F_u5F00_u59CB"><a href="#u5FEB_u901F_u5F00_u59CB" class="headerlink" title="快速开始"></a>快速开始</h2><p>搭建iOS开发环境</p>
 <h3 id="u5B89_u88C5"><a href="#u5B89_u88C5" class="headerlink" title="安装"></a>安装</h3><p>我的node环境是通过nvm安装,node版本v4.1.2</p>
 <p>安装watchman,facebook提供的文件监视器,便于文件编译</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install watchman</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install watchman</span><br></pre></td></tr></table></figure>
 <p>安装React Native CLI工具,可能需要sudo权限</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g react-native-cli</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g react-native-cli</span><br></pre></td></tr></table></figure>
 <p>安装没有出错,继续,出错请google之.</p>
 <h3 id="u521B_u5EFADemo"><a href="#u521B_u5EFADemo" class="headerlink" title="创建Demo"></a>创建Demo</h3><p>可能需要sudo</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">react-native init Demo</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ react-native init Demo</span><br></pre></td></tr></table></figure>
 <p>执行命令后,需要稍等一会,因为需要联网下载,成功后会有如下信息展示<br><code>Installing react-native package from npm...</code></p>
-<p><code>Setting up new React Native app in /Users/dongjinfeng/djf/workspace/react_native_demo/Demo</code></p>
+<p><code>Setting up new React Native app in /Users/your path/workspace/react_native_demo/Demo</code></p>
 <p><code>To run your app on iOS:</code></p>
-<p><code>Open /Users/dongjinfeng/djf/workspace/react_native_demo/Demo/ios/Demo.xcodeproj in Xcode</code></p>
+<p><code>Open /Users/your path/workspace/react_native_demo/Demo/ios/Demo.xcodeproj in Xcode</code></p>
 <p><code>Hit the Run button</code></p>
 <p><code>To run your app on Android:</code></p>
 <p><code>Have an Android emulator running (quickest way to get started), or a device connected
-   cd /Users/dongjinfeng/djf/workspace/react_native_demo/Demo</code></p>
+   cd /Users/your path/workspace/react_native_demo/Demo</code></p>
 <p><code>react-native run-android</code></p>
 <p>按上面提示iOS用XCode打开就可以了,Android则需要使用模拟器</p>
 <p>打开”Demo.xcodeproj”时,可能会提示你没有权限,检查下”/Users/your path/.babel.json”该文件是否可读写</p>
