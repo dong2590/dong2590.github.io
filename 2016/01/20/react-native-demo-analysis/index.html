@@ -4,10 +4,20 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>react-native-示例代码分析 | Web自留地</title>
+    <title>react-native-示例代码浅析 | Web自留地</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="Kenn Tung">
+    
+    <meta name="description" content="##写在前面的话ES6让我想起丢弃多年的JAVA代码
+严格模式
+&amp;apos;use strict&amp;apos;;
+ES6中默认开启
+##引入所使用到组件
+ES5 Code
+var React = require(&amp;apos;react-native&amp;apos;);
+var {
+  AppRegistr">
     
     
     
@@ -63,15 +73,15 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/01/20/react-native-demo-analysis/" title="react-native-示例代码分析" itemprop="url">react-native-示例代码分析</a>
+      <a href="/2016/01/20/react-native-demo-analysis/" title="react-native-示例代码浅析" itemprop="url">react-native-示例代码浅析</a>
   </h1>
   <p class="article-author">By
     
       <a href="https://dong2590.github.io" title="Kenn Tung">Kenn Tung</a>
     </p>
   <p class="article-time">
-    <time datetime="2016-01-20T13:09:27.000Z" itemprop="datePublished">2016-01-20</time>
-    更新日期:<time datetime="2016-01-20T13:09:27.000Z" itemprop="dateModified">2016-01-20</time>
+    <time datetime="2016-01-20T14:25:32.000Z" itemprop="datePublished">2016-01-20</time>
+    更新日期:<time datetime="2016-01-20T14:25:32.000Z" itemprop="dateModified">2016-01-20</time>
     
   </p>
 </header>
@@ -83,7 +93,88 @@
 		
 		</div>
 		
-		  
+		<p>##写在前面的话<br>ES6让我想起丢弃多年的JAVA代码</p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Strict_mode" target="_blank" rel="external">严格模式</a></p>
+<pre><code>&apos;use strict&apos;;
+</code></pre><p>ES6中默认开启</p>
+<p>##引入所使用到组件</p>
+<p>ES5 Code</p>
+<pre><code>var React = require(&apos;react-native&apos;);
+var {
+  AppRegistry,
+  StyleSheet,
+  Text,
+  View,
+} = React;
+</code></pre><p>以上<a href="http://es6.ruanyifeng.com/#docs/destructuring#对象的解构赋值" target="_blank" rel="external">解构赋值</a>代码等同于</p>
+<p>ES6 Code</p>
+<pre><code>import React, {
+  AppRegistry,
+  StyleSheet,
+  Text,
+  View,
+} from &apos;react-native&apos;;
+</code></pre><p>##创建一个组件<br>创建一个用于渲染内容的组件,return里面就是JSX代码了</p>
+<pre><code>//ES5 Code
+var Demo = React.createClass({
+  render: function() {
+    return (
+      &lt;View style={styles.container}&gt;
+        &lt;Text style={styles.welcome}&gt;
+          Welcome to React Native Demo!
+        &lt;/Text&gt;
+        &lt;Text style={styles.instructions}&gt;
+          To get started, edit index.ios.js
+        &lt;/Text&gt;
+        &lt;Text style={styles.instructions}&gt;
+          Press Cmd+R to reload,{&apos;\n&apos;}
+          Cmd+D or shake for dev menu
+        &lt;/Text&gt;
+      &lt;/View&gt;
+    );
+  }
+});
+</code></pre><p>以上代码等同于</p>
+<pre><code>//ES6 Code
+class Demo extends React.Component {
+    render() {
+      return (
+        &lt;View style={styles.container}&gt;
+          &lt;Text style={styles.welcome}&gt;
+            Welcome to React Native Demo!
+          &lt;/Text&gt;
+          &lt;Text style={styles.instructions}&gt;
+            To get started, edit index.ios.js
+          &lt;/Text&gt;
+          &lt;Text style={styles.instructions}&gt;
+            Press Cmd+R to reload,{&apos;\n&apos;}
+            Cmd+D or shake for dev menu
+          &lt;/Text&gt;
+        &lt;/View&gt;
+      );
+    }
+}
+</code></pre><p>##创建组件的样式<br>这里是调用api,没有ES6的写法了,这里主要了解下容器的布局,又回忆起ExtJS的布局</p>
+<pre><code>var styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: &apos;center&apos;,
+    alignItems: &apos;center&apos;,
+    backgroundColor: &apos;#F5FCFF&apos;,
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: &apos;center&apos;,
+    margin: 10,
+  },
+  instructions: {
+    textAlign: &apos;center&apos;,
+    color: &apos;#333333&apos;,
+    marginBottom: 5,
+  },
+});
+</code></pre><p>##代码入口<br>    AppRegistry.registerComponent(‘Demo’, () =&gt; Demo);</p>
+  
 	</div>
 		<footer class="article-footer clearfix">
 
@@ -92,7 +183,7 @@
 
 <div class="article-share" id="share">
 
-  <div data-url="https://dong2590.github.io/2016/01/20/react-native-demo-analysis/" data-title="react-native-示例代码分析 | Web自留地" data-tsina="null" class="share clearfix">
+  <div data-url="https://dong2590.github.io/2016/01/20/react-native-demo-analysis/" data-title="react-native-示例代码浅析 | Web自留地" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
