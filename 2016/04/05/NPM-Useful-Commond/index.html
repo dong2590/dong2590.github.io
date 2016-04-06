@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="nodejs,react-native," />
+  <meta name="keywords" content="commond,npm," />
 
 
 
@@ -57,55 +57,31 @@
 
 
 
-<meta name="description" content="##写在前面的话ES6让我想起丢弃多年的JAVA代码
-严格模式
-&amp;apos;use strict&amp;apos;;
-ES6中默认开启
-##引入所使用到组件
-ES5 Code
-var React = require(&amp;apos;react-native&amp;apos;);
-var {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View,
-} = React;
-以上解构赋值">
+<meta name="description" content="全局包一级列表
+1npm list -g -depth 0
+效果如下
+1234567/Users/.nvm/versions/node/v5.4.1/lib  ├── hexo@3.2.0├── hexo-cli@0.2.0├── jsxhint@0.15.1├── npm@3.8.0├── react-native-cli@0.1.10└── whistle@0.9.2
+清除缓存
+1npm ca">
 <meta property="og:type" content="article">
-<meta property="og:title" content="react-native-示例代码浅析">
-<meta property="og:url" content="https://dong2590.github.io/2016/01/20/react-native-demo-analysis/index.html">
+<meta property="og:title" content="NPM 常用命令">
+<meta property="og:url" content="https://dong2590.github.io/2016/04/05/NPM-Useful-Commond/index.html">
 <meta property="og:site_name" content="Web自留地">
-<meta property="og:description" content="##写在前面的话ES6让我想起丢弃多年的JAVA代码
-严格模式
-&amp;apos;use strict&amp;apos;;
-ES6中默认开启
-##引入所使用到组件
-ES5 Code
-var React = require(&amp;apos;react-native&amp;apos;);
-var {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View,
-} = React;
-以上解构赋值">
-<meta property="og:updated_time" content="2016-01-21T06:36:12.000Z">
+<meta property="og:description" content="全局包一级列表
+1npm list -g -depth 0
+效果如下
+1234567/Users/.nvm/versions/node/v5.4.1/lib  ├── hexo@3.2.0├── hexo-cli@0.2.0├── jsxhint@0.15.1├── npm@3.8.0├── react-native-cli@0.1.10└── whistle@0.9.2
+清除缓存
+1npm ca">
+<meta property="og:updated_time" content="2016-04-06T03:17:22.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="react-native-示例代码浅析">
-<meta name="twitter:description" content="##写在前面的话ES6让我想起丢弃多年的JAVA代码
-严格模式
-&amp;apos;use strict&amp;apos;;
-ES6中默认开启
-##引入所使用到组件
-ES5 Code
-var React = require(&amp;apos;react-native&amp;apos;);
-var {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View,
-} = React;
-以上解构赋值">
+<meta name="twitter:title" content="NPM 常用命令">
+<meta name="twitter:description" content="全局包一级列表
+1npm list -g -depth 0
+效果如下
+1234567/Users/.nvm/versions/node/v5.4.1/lib  ├── hexo@3.2.0├── hexo-cli@0.2.0├── jsxhint@0.15.1├── npm@3.8.0├── react-native-cli@0.1.10└── whistle@0.9.2
+清除缓存
+1npm ca">
 
 
 
@@ -123,7 +99,7 @@ var {
   };
 </script>
 
-  <title> react-native-示例代码浅析 | Web自留地 </title>
+  <title> NPM 常用命令 | Web自留地 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -243,7 +219,7 @@ var {
             
             
               
-                react-native-示例代码浅析
+                NPM 常用命令
               
             
           </h1>
@@ -255,8 +231,8 @@ var {
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-01-20T22:25:32+08:00" content="2016-01-20">
-              2016-01-20
+            <time itemprop="dateCreated" datetime="2016-04-05T17:25:32+08:00" content="2016-04-05">
+              2016-04-05
             </time>
           </span>
 
@@ -269,8 +245,8 @@ var {
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/react-native/" itemprop="url" rel="index">
-                    <span itemprop="name">react-native</span>
+                  <a href="/categories/nodejs/" itemprop="url" rel="index">
+                    <span itemprop="name">nodejs</span>
                   </a>
                 </span>
 
@@ -285,8 +261,8 @@ var {
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/01/20/react-native-demo-analysis/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/20/react-native-demo-analysis/" itemprop="commentsCount"></span>
+                <a href="/2016/04/05/NPM-Useful-Commond/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/05/NPM-Useful-Commond/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -307,87 +283,14 @@ var {
       
 
       
-        <p>##写在前面的话<br>ES6让我想起丢弃多年的JAVA代码</p>
-<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Strict_mode" target="_blank" rel="external">严格模式</a></p>
-<pre><code>&apos;use strict&apos;;
-</code></pre><p>ES6中默认开启</p>
-<p>##引入所使用到组件</p>
-<p>ES5 Code</p>
-<pre><code>var React = require(&apos;react-native&apos;);
-var {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View,
-} = React;
-</code></pre><p>以上<a href="http://es6.ruanyifeng.com/#docs/destructuring#对象的解构赋值" target="_blank" rel="external">解构赋值</a>代码等同于</p>
-<p>ES6 Code</p>
-<pre><code>import React, {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View,
-} from &apos;react-native&apos;;
-</code></pre><p>##创建一个组件<br>创建一个用于渲染内容的组件,return里面就是JSX代码了</p>
-<pre><code>//ES5 Code
-var Demo = React.createClass({
-  render: function() {
-    return (
-      &lt;View style={styles.container}&gt;
-        &lt;Text style={styles.welcome}&gt;
-          Welcome to React Native Demo!
-        &lt;/Text&gt;
-        &lt;Text style={styles.instructions}&gt;
-          To get started, edit index.ios.js
-        &lt;/Text&gt;
-        &lt;Text style={styles.instructions}&gt;
-          Press Cmd+R to reload,{&apos;\n&apos;}
-          Cmd+D or shake for dev menu
-        &lt;/Text&gt;
-      &lt;/View&gt;
-    );
-  }
-});
-</code></pre><p>以上代码等同于</p>
-<pre><code>//ES6 Code
-class Demo extends React.Component {
-    render() {
-      return (
-        &lt;View style={styles.container}&gt;
-          &lt;Text style={styles.welcome}&gt;
-            Welcome to React Native Demo!
-          &lt;/Text&gt;
-          &lt;Text style={styles.instructions}&gt;
-            To get started, edit index.ios.js
-          &lt;/Text&gt;
-          &lt;Text style={styles.instructions}&gt;
-            Press Cmd+R to reload,{&apos;\n&apos;}
-            Cmd+D or shake for dev menu
-          &lt;/Text&gt;
-        &lt;/View&gt;
-      );
-    }
-}
-</code></pre><p>##创建组件的样式<br>这里是调用api,没有ES6的写法了,这里主要了解下容器的布局,又回忆起ExtJS的布局</p>
-<pre><code>var styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: &apos;center&apos;,
-    alignItems: &apos;center&apos;,
-    backgroundColor: &apos;#F5FCFF&apos;,
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: &apos;center&apos;,
-    margin: 10,
-  },
-  instructions: {
-    textAlign: &apos;center&apos;,
-    color: &apos;#333333&apos;,
-    marginBottom: 5,
-  },
-});
-</code></pre><p>##代码入口<br>    AppRegistry.registerComponent(‘Demo’, () =&gt; Demo);</p>
+        <p>全局包一级列表</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm list -g -depth <span class="number">0</span></span><br></pre></td></tr></table></figure>
+<p>效果如下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">/Users/.nvm/versions/node/v5.<span class="number">4.1</span>/lib  </span><br><span class="line">├── hexo@<span class="number">3.2</span>.<span class="number">0</span></span><br><span class="line">├── hexo-cli@<span class="number">0.2</span>.<span class="number">0</span></span><br><span class="line">├── jsxhint@<span class="number">0.15</span>.<span class="number">1</span></span><br><span class="line">├── npm@<span class="number">3.8</span>.<span class="number">0</span></span><br><span class="line">├── react-native-cli@<span class="number">0.1</span>.<span class="number">10</span></span><br><span class="line">└── whistle@<span class="number">0.9</span>.<span class="number">2</span></span><br></pre></td></tr></table></figure>
+<p>清除缓存</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm cahce clean</span><br></pre></td></tr></table></figure>
+<p>查找某全局包及相关是否安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm list -g | grep packageName</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -396,9 +299,9 @@ class Demo extends React.Component {
       
         <div class="post-tags">
           
-            <a href="/tags/nodejs/" rel="tag">#nodejs</a>
+            <a href="/tags/commond/" rel="tag">#commond</a>
           
-            <a href="/tags/react-native/" rel="tag">#react-native</a>
+            <a href="/tags/npm/" rel="tag">#npm</a>
           
         </div>
       
@@ -407,17 +310,13 @@ class Demo extends React.Component {
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/12/react-native-introduction/" rel="next" title="react-native环境搭建">
-                <i class="fa fa-chevron-left"></i> react-native环境搭建
+              <a href="/2016/01/20/react-native-demo-analysis/" rel="next" title="react-native-示例代码浅析">
+                <i class="fa fa-chevron-left"></i> react-native-示例代码浅析
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/04/05/NPM-Useful-Commond/" rel="prev" title="NPM 常用命令">
-                NPM 常用命令 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -443,8 +342,8 @@ class Demo extends React.Component {
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/01/20/react-native-demo-analysis/"
-           data-title="react-native-示例代码浅析" data-url="https://dong2590.github.io/2016/01/20/react-native-demo-analysis/">
+      <div class="ds-thread" data-thread-key="2016/04/05/NPM-Useful-Commond/"
+           data-title="NPM 常用命令" data-url="https://dong2590.github.io/2016/04/05/NPM-Useful-Commond/">
       </div>
     
   </div>
