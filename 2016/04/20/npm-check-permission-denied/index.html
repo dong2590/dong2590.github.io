@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="nodejs,react-native," />
+  <meta name="keywords" content="nodejs,npm,npm-check,permission-denied," />
 
 
 
@@ -57,55 +57,28 @@
 
 
 
-<meta name="description" content="##写在前面的话ES6让我想起丢弃多年的JAVA代码
-严格模式
-&amp;apos;use strict&amp;apos;;
-ES6中默认开启
-##引入所使用到组件
-ES5 Code
-var React = require(&amp;apos;react-native&amp;apos;);
-var {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View,
-} = React;
-以上解构赋值">
+<meta name="description" content="原来有安装过npm-check,由于梳理环境,都重新安装了一次
+在~目录,执行npm-check
+1bogon:~ kenn$ npm-check -gu
+出现权限错误提示
+12345678910111213141516/Users/kenn/.nvm/versions/node/v5.10.1/lib/node_modules/npm-check/node_modules/configstore">
 <meta property="og:type" content="article">
-<meta property="og:title" content="react-native-示例代码浅析">
-<meta property="og:url" content="https://dong2590.github.io/2016/01/20/react-native-demo-analysis/index.html">
+<meta property="og:title" content="解决执行npm-check时,报permission denied错误">
+<meta property="og:url" content="https://dong2590.github.io/2016/04/20/npm-check-permission-denied/index.html">
 <meta property="og:site_name" content="Web自留地">
-<meta property="og:description" content="##写在前面的话ES6让我想起丢弃多年的JAVA代码
-严格模式
-&amp;apos;use strict&amp;apos;;
-ES6中默认开启
-##引入所使用到组件
-ES5 Code
-var React = require(&amp;apos;react-native&amp;apos;);
-var {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View,
-} = React;
-以上解构赋值">
-<meta property="og:updated_time" content="2016-01-21T06:36:12.000Z">
+<meta property="og:description" content="原来有安装过npm-check,由于梳理环境,都重新安装了一次
+在~目录,执行npm-check
+1bogon:~ kenn$ npm-check -gu
+出现权限错误提示
+12345678910111213141516/Users/kenn/.nvm/versions/node/v5.10.1/lib/node_modules/npm-check/node_modules/configstore">
+<meta property="og:updated_time" content="2016-04-20T07:53:07.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="react-native-示例代码浅析">
-<meta name="twitter:description" content="##写在前面的话ES6让我想起丢弃多年的JAVA代码
-严格模式
-&amp;apos;use strict&amp;apos;;
-ES6中默认开启
-##引入所使用到组件
-ES5 Code
-var React = require(&amp;apos;react-native&amp;apos;);
-var {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View,
-} = React;
-以上解构赋值">
+<meta name="twitter:title" content="解决执行npm-check时,报permission denied错误">
+<meta name="twitter:description" content="原来有安装过npm-check,由于梳理环境,都重新安装了一次
+在~目录,执行npm-check
+1bogon:~ kenn$ npm-check -gu
+出现权限错误提示
+12345678910111213141516/Users/kenn/.nvm/versions/node/v5.10.1/lib/node_modules/npm-check/node_modules/configstore">
 
 
 
@@ -123,7 +96,7 @@ var {
   };
 </script>
 
-  <title> react-native-示例代码浅析 | Web自留地 </title>
+  <title> 解决执行npm-check时,报permission denied错误 | Web自留地 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -243,7 +216,7 @@ var {
             
             
               
-                react-native-示例代码浅析
+                解决执行npm-check时,报permission denied错误
               
             
           </h1>
@@ -255,38 +228,19 @@ var {
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-01-20T22:25:32+08:00" content="2016-01-20">
-              2016-01-20
+            <time itemprop="dateCreated" datetime="2016-04-20T15:51:01+08:00" content="2016-04-20">
+              2016-04-20
             </time>
           </span>
 
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/react-native/" itemprop="url" rel="index">
-                    <span itemprop="name">react-native</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
           
 
           
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/01/20/react-native-demo-analysis/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/20/react-native-demo-analysis/" itemprop="commentsCount"></span>
+                <a href="/2016/04/20/npm-check-permission-denied/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/20/npm-check-permission-denied/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -307,87 +261,13 @@ var {
       
 
       
-        <p>##写在前面的话<br>ES6让我想起丢弃多年的JAVA代码</p>
-<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Strict_mode" target="_blank" rel="external">严格模式</a></p>
-<pre><code>&apos;use strict&apos;;
-</code></pre><p>ES6中默认开启</p>
-<p>##引入所使用到组件</p>
-<p>ES5 Code</p>
-<pre><code>var React = require(&apos;react-native&apos;);
-var {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View,
-} = React;
-</code></pre><p>以上<a href="http://es6.ruanyifeng.com/#docs/destructuring#对象的解构赋值" target="_blank" rel="external">解构赋值</a>代码等同于</p>
-<p>ES6 Code</p>
-<pre><code>import React, {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View,
-} from &apos;react-native&apos;;
-</code></pre><p>##创建一个组件<br>创建一个用于渲染内容的组件,return里面就是JSX代码了</p>
-<pre><code>//ES5 Code
-var Demo = React.createClass({
-  render: function() {
-    return (
-      &lt;View style={styles.container}&gt;
-        &lt;Text style={styles.welcome}&gt;
-          Welcome to React Native Demo!
-        &lt;/Text&gt;
-        &lt;Text style={styles.instructions}&gt;
-          To get started, edit index.ios.js
-        &lt;/Text&gt;
-        &lt;Text style={styles.instructions}&gt;
-          Press Cmd+R to reload,{&apos;\n&apos;}
-          Cmd+D or shake for dev menu
-        &lt;/Text&gt;
-      &lt;/View&gt;
-    );
-  }
-});
-</code></pre><p>以上代码等同于</p>
-<pre><code>//ES6 Code
-class Demo extends React.Component {
-    render() {
-      return (
-        &lt;View style={styles.container}&gt;
-          &lt;Text style={styles.welcome}&gt;
-            Welcome to React Native Demo!
-          &lt;/Text&gt;
-          &lt;Text style={styles.instructions}&gt;
-            To get started, edit index.ios.js
-          &lt;/Text&gt;
-          &lt;Text style={styles.instructions}&gt;
-            Press Cmd+R to reload,{&apos;\n&apos;}
-            Cmd+D or shake for dev menu
-          &lt;/Text&gt;
-        &lt;/View&gt;
-      );
-    }
-}
-</code></pre><p>##创建组件的样式<br>这里是调用api,没有ES6的写法了,这里主要了解下容器的布局,又回忆起ExtJS的布局</p>
-<pre><code>var styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: &apos;center&apos;,
-    alignItems: &apos;center&apos;,
-    backgroundColor: &apos;#F5FCFF&apos;,
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: &apos;center&apos;,
-    margin: 10,
-  },
-  instructions: {
-    textAlign: &apos;center&apos;,
-    color: &apos;#333333&apos;,
-    marginBottom: 5,
-  },
-});
-</code></pre><p>##代码入口<br>    AppRegistry.registerComponent(‘Demo’, () =&gt; Demo);</p>
+        <p>原来有安装过npm-check,由于梳理环境,都重新安装了一次</p>
+<p>在~目录,执行npm-check</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bogon:~ kenn$ npm-check -gu</span><br></pre></td></tr></table></figure>
+<p>出现权限错误提示</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">/Users/kenn/.nvm/versions/node/v5.<span class="number">10.1</span>/lib/node_modules/npm-check/node_modules/configstore/index.js:<span class="number">54</span></span><br><span class="line">				throw err;</span><br><span class="line">				^</span><br><span class="line">Error: EACCES: permission denied, open <span class="string">'/Users/kenn/.config/configstore/update-notifier-npm-check.json'</span></span><br><span class="line">You don<span class="string">'t have access to this file.</span><br><span class="line"></span><br><span class="line">    at Error (native)</span><br><span class="line">    at Object.fs.openSync (fs.js:584:18)</span><br><span class="line">    at Object.fs.readFileSync (fs.js:431:33)</span><br><span class="line">    at Object.create.all.get (/Users/kenn/.nvm/versions/node/v5.10.1/lib/node_modules/npm-check/node_modules/configstore/index.js:35:26)</span><br><span class="line">    at Object.Configstore (/Users/kenn/.nvm/versions/node/v5.10.1/lib/node_modules/npm-check/node_modules/configstore/index.js:28:44)</span><br><span class="line">    at new UpdateNotifier (/Users/kenn/.nvm/versions/node/v5.10.1/lib/node_modules/npm-check/node_modules/update-notifier/index.js:34:17)</span><br><span class="line">    at module.exports (/Users/kenn/.nvm/versions/node/v5.10.1/lib/node_modules/npm-check/node_modules/update-notifier/index.js:108:23)</span><br><span class="line">    at Object.&lt;anonymous&gt; (/Users/kenn/.nvm/versions/node/v5.10.1/lib/node_modules/npm-check/lib/cli.js:14:1)</span><br><span class="line">    at Module._compile (module.js:413:34)</span><br><span class="line">    at Object.Module._extensions..js (module.js:422:10)</span></span><br></pre></td></tr></table></figure>
+<p>各种chmod授权不起作用,直接删除该<code>update-notifier-npm-check.json</code>文件<br>重新运行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm-check -gu</span><br></pre></td></tr></table></figure></p>
+<p>重新生成了该文件,并且能正常检测npm更新了</p>
 
       
     </div>
@@ -398,7 +278,11 @@ class Demo extends React.Component {
           
             <a href="/tags/nodejs/" rel="tag">#nodejs</a>
           
-            <a href="/tags/react-native/" rel="tag">#react-native</a>
+            <a href="/tags/npm/" rel="tag">#npm</a>
+          
+            <a href="/tags/npm-check/" rel="tag">#npm-check</a>
+          
+            <a href="/tags/permission-denied/" rel="tag">#permission-denied</a>
           
         </div>
       
@@ -407,17 +291,13 @@ class Demo extends React.Component {
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/12/react-native-introduction/" rel="next" title="react-native环境搭建">
-                <i class="fa fa-chevron-left"></i> react-native环境搭建
+              <a href="/2016/04/05/NPM-Useful-Commond/" rel="next" title="NPM 常用命令">
+                <i class="fa fa-chevron-left"></i> NPM 常用命令
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/04/05/NPM-Useful-Commond/" rel="prev" title="NPM 常用命令">
-                NPM 常用命令 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -443,8 +323,8 @@ class Demo extends React.Component {
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/01/20/react-native-demo-analysis/"
-           data-title="react-native-示例代码浅析" data-url="https://dong2590.github.io/2016/01/20/react-native-demo-analysis/">
+      <div class="ds-thread" data-thread-key="2016/04/20/npm-check-permission-denied/"
+           data-title="解决执行npm-check时,报permission denied错误" data-url="https://dong2590.github.io/2016/04/20/npm-check-permission-denied/">
       </div>
     
   </div>
