@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="nodejs,npm,npm-check,permission-denied," />
+  <meta name="keywords" content="Recat Native,Super expression must either be null or a function,nodejs,npm,升级," />
 
 
 
@@ -57,28 +57,25 @@
 
 
 
-<meta name="description" content="原来有安装过npm-check,由于梳理环境,都重新安装了一次
-在~目录,执行npm-check
-1bogon:~ kenn$ npm-check -gu
-出现权限错误提示
-12345678910111213141516/Users/kenn/.nvm/versions/node/v5.10.1/lib/node_modules/npm-check/node_modules/configstore">
+<meta name="description" content="从rn0.24.1 升级到 0.26时，大部分的组件扩展都表示不兼容，移除不兼容的组件后，报如下错误：
+index.ios.bundle:24328Super expression must either be null or a function, not undefinedhandleException 
+@ index.ios.bundle:24328handleError 
+@ index">
 <meta property="og:type" content="article">
-<meta property="og:title" content="解决执行npm-check时,报permission denied错误">
-<meta property="og:url" content="https://dong2590.github.io/2016/04/20/npm-check-permission-denied/index.html">
+<meta property="og:title" content="升级Recat Native0.26后,解决Super expression must either be null or a function问题">
+<meta property="og:url" content="https://dong2590.github.io/2016/05/19/Super-expression-must-either-be-null-or-a-function/index.html">
 <meta property="og:site_name" content="Web自留地">
-<meta property="og:description" content="原来有安装过npm-check,由于梳理环境,都重新安装了一次
-在~目录,执行npm-check
-1bogon:~ kenn$ npm-check -gu
-出现权限错误提示
-12345678910111213141516/Users/kenn/.nvm/versions/node/v5.10.1/lib/node_modules/npm-check/node_modules/configstore">
-<meta property="og:updated_time" content="2016-04-20T07:53:07.000Z">
+<meta property="og:description" content="从rn0.24.1 升级到 0.26时，大部分的组件扩展都表示不兼容，移除不兼容的组件后，报如下错误：
+index.ios.bundle:24328Super expression must either be null or a function, not undefinedhandleException 
+@ index.ios.bundle:24328handleError 
+@ index">
+<meta property="og:updated_time" content="2016-05-19T09:49:03.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="解决执行npm-check时,报permission denied错误">
-<meta name="twitter:description" content="原来有安装过npm-check,由于梳理环境,都重新安装了一次
-在~目录,执行npm-check
-1bogon:~ kenn$ npm-check -gu
-出现权限错误提示
-12345678910111213141516/Users/kenn/.nvm/versions/node/v5.10.1/lib/node_modules/npm-check/node_modules/configstore">
+<meta name="twitter:title" content="升级Recat Native0.26后,解决Super expression must either be null or a function问题">
+<meta name="twitter:description" content="从rn0.24.1 升级到 0.26时，大部分的组件扩展都表示不兼容，移除不兼容的组件后，报如下错误：
+index.ios.bundle:24328Super expression must either be null or a function, not undefinedhandleException 
+@ index.ios.bundle:24328handleError 
+@ index">
 
 
 
@@ -96,7 +93,7 @@
   };
 </script>
 
-  <title> 解决执行npm-check时,报permission denied错误 | Web自留地 </title>
+  <title> 升级Recat Native0.26后,解决Super expression must either be null or a function问题 | Web自留地 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -216,7 +213,7 @@
             
             
               
-                解决执行npm-check时,报permission denied错误
+                升级Recat Native0.26后,解决Super expression must either be null or a function问题
               
             
           </h1>
@@ -228,8 +225,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-20T15:51:01+08:00" content="2016-04-20">
-              2016-04-20
+            <time itemprop="dateCreated" datetime="2016-05-19T15:51:01+08:00" content="2016-05-19">
+              2016-05-19
             </time>
           </span>
 
@@ -239,8 +236,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/04/20/npm-check-permission-denied/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/20/npm-check-permission-denied/" itemprop="commentsCount"></span>
+                <a href="/2016/05/19/Super-expression-must-either-be-null-or-a-function/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/19/Super-expression-must-either-be-null-or-a-function/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -261,13 +258,19 @@
       
 
       
-        <p>原来有安装过npm-check,由于梳理环境,都重新安装了一次</p>
-<p>在~目录,执行npm-check</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bogon:~ kenn$ npm-check -gu</span><br></pre></td></tr></table></figure>
-<p>出现权限错误提示</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">/Users/kenn/.nvm/versions/node/v5.<span class="number">10.1</span>/lib/node_modules/npm-check/node_modules/configstore/index.js:<span class="number">54</span></span><br><span class="line">				throw err;</span><br><span class="line">				^</span><br><span class="line">Error: EACCES: permission denied, open <span class="string">'/Users/kenn/.config/configstore/update-notifier-npm-check.json'</span></span><br><span class="line">You don<span class="string">'t have access to this file.</span><br><span class="line"></span><br><span class="line">    at Error (native)</span><br><span class="line">    at Object.fs.openSync (fs.js:584:18)</span><br><span class="line">    at Object.fs.readFileSync (fs.js:431:33)</span><br><span class="line">    at Object.create.all.get (/Users/kenn/.nvm/versions/node/v5.10.1/lib/node_modules/npm-check/node_modules/configstore/index.js:35:26)</span><br><span class="line">    at Object.Configstore (/Users/kenn/.nvm/versions/node/v5.10.1/lib/node_modules/npm-check/node_modules/configstore/index.js:28:44)</span><br><span class="line">    at new UpdateNotifier (/Users/kenn/.nvm/versions/node/v5.10.1/lib/node_modules/npm-check/node_modules/update-notifier/index.js:34:17)</span><br><span class="line">    at module.exports (/Users/kenn/.nvm/versions/node/v5.10.1/lib/node_modules/npm-check/node_modules/update-notifier/index.js:108:23)</span><br><span class="line">    at Object.&lt;anonymous&gt; (/Users/kenn/.nvm/versions/node/v5.10.1/lib/node_modules/npm-check/lib/cli.js:14:1)</span><br><span class="line">    at Module._compile (module.js:413:34)</span><br><span class="line">    at Object.Module._extensions..js (module.js:422:10)</span></span><br></pre></td></tr></table></figure>
-<p>各种chmod授权不起作用,直接删除该<code>update-notifier-npm-check.json</code>文件<br>重新运行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm-check -gu</span><br></pre></td></tr></table></figure></p>
-<p>重新生成了该文件,并且能正常检测npm更新了</p>
+        <p>从rn0.24.1 升级到 0.26时，大部分的组件扩展都表示不兼容，移除不兼容的组件后，报如下错误：</p>
+<pre><code>index.ios.bundle:24328Super expression must either be null or a function, not undefinedhandleException 
+@ index.ios.bundle:24328handleError 
+@ index.ios.bundle:23465reportFatalError 
+@ index.ios.bundle:809guardedLoadModule 
+@ index.ios.bundle:54(anonymous function) 
+@ index.ios.bundle:78534executeApplicationScript 
+@ debuggerWorker.js:18onmessage
+@ debuggerWorker.js:33
+</code></pre><p>经查，原来是<code>React</code>、<code>Component</code> 不再支持从<code>react-native</code>导入了。</p>
+<p>原方式<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123;</span><br><span class="line">  StyleSheet,</span><br><span class="line">  Text,</span><br><span class="line">  View,</span><br><span class="line">  ListView,</span><br><span class="line">  Image,</span><br><span class="line">&#125; <span class="keyword">from</span> <span class="string">'react-native'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Grid</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>变更为<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123;</span><br><span class="line">  Component,</span><br><span class="line">&#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> &#123;</span><br><span class="line">  StyleSheet,</span><br><span class="line">  Text,</span><br><span class="line">  View,</span><br><span class="line">  ListView,</span><br><span class="line">  Image,</span><br><span class="line">&#125; <span class="keyword">from</span> <span class="string">'react-native'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Grid</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>再次运行，无错误。</p>
 
       
     </div>
@@ -276,13 +279,15 @@
       
         <div class="post-tags">
           
+            <a href="/tags/Recat-Native/" rel="tag">#Recat Native</a>
+          
+            <a href="/tags/Super-expression-must-either-be-null-or-a-function/" rel="tag">#Super expression must either be null or a function</a>
+          
             <a href="/tags/nodejs/" rel="tag">#nodejs</a>
           
             <a href="/tags/npm/" rel="tag">#npm</a>
           
-            <a href="/tags/npm-check/" rel="tag">#npm-check</a>
-          
-            <a href="/tags/permission-denied/" rel="tag">#permission-denied</a>
+            <a href="/tags/升级/" rel="tag">#升级</a>
           
         </div>
       
@@ -291,17 +296,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/04/05/NPM-Useful-Commond/" rel="next" title="NPM 常用命令">
-                <i class="fa fa-chevron-left"></i> NPM 常用命令
+              <a href="/2016/04/20/npm-check-permission-denied/" rel="next" title="解决执行npm-check时,报permission denied错误">
+                <i class="fa fa-chevron-left"></i> 解决执行npm-check时,报permission denied错误
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/05/19/Super-expression-must-either-be-null-or-a-function/" rel="prev" title="升级Recat Native0.26后,解决Super expression must either be null or a function问题">
-                升级Recat Native0.26后,解决Super expression must either be null or a function问题 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -327,8 +328,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/04/20/npm-check-permission-denied/"
-           data-title="解决执行npm-check时,报permission denied错误" data-url="https://dong2590.github.io/2016/04/20/npm-check-permission-denied/">
+      <div class="ds-thread" data-thread-key="2016/05/19/Super-expression-must-either-be-null-or-a-function/"
+           data-title="升级Recat Native0.26后,解决Super expression must either be null or a function问题" data-url="https://dong2590.github.io/2016/05/19/Super-expression-must-either-be-null-or-a-function/">
       </div>
     
   </div>
